@@ -1,0 +1,28 @@
+.swipe-effect {
+    color: var(--nice-black);
+    border-color: var(--nice-black);
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.swipe-effect::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--nice-black);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.swipe-effect:hover::before{
+    transform: translateX(0);
+}
+
+.swipe-effect:hover{
+    color: white;
+}
