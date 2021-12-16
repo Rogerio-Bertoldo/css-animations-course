@@ -1,0 +1,11 @@
+.text-effect {
+    text-transform: capitalize;
+    letter-spacing: -2px;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+.text-effect:hover{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
