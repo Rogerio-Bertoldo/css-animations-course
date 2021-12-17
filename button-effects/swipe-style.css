@@ -13,16 +13,37 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--nice-black);
     z-index: -1;
-    transform: translateX(-100%);
+    background-color: var(--nice-black);
     transition: all 1s;
 }
 
-.swipe-effect:hover::before{
+.swipe-left-right::before{
+    transform: translateX(-100%);
+}
+
+.swipe-left-right:hover::before{
     transform: translateX(0);
 }
 
-.swipe-effect:hover{
+.swipe-left-right:hover{
+    color: white;
+}
+
+
+.swipe-top-bottom{
+    transition: all 0.5s;
+}
+.swipe-top-bottom::before{
+    transition: all 0.5s;
+}
+
+.swipe-top-bottom::before{
+    content: "Hello!";
+    transform: translateY(-100%);
+}
+
+.swipe-top-bottom:hover::before{
+    transform: translateY(0);
     color: white;
 }
