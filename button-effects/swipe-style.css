@@ -13,12 +13,12 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
     background-color: var(--nice-black);
     transition: all 1s;
 }
 
 .swipe-left-right::before{
+    z-index: -1;
     transform: translateX(-100%);
 }
 
@@ -35,6 +35,9 @@
     transition: all 0.5s;
 }
 .swipe-top-bottom::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s;
 }
 

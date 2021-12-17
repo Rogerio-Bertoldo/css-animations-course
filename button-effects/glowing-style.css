@@ -1,0 +1,22 @@
+.glowing-effect{
+    background-color: #f44336;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.glowing-effect::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 30%;
+    width: 100%;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 1s;
+}
+
+.glowing-effect:hover::before{
+    transform: translate(100%) rotate(45deg);
+}
