@@ -1,10 +1,17 @@
 :root{
-  --nice-black:#351435; 
+  --nice-black:#272727; 
 }
 
 body {
   height: 100vh;
   display: flex;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--nice-black);
 }
 
 .container {

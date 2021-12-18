@@ -1,0 +1,44 @@
+.swapping-layers{
+    position: relative;
+    color: white;
+    background-color: var(--nice-black);
+    overflow: hidden;
+}
+.swapping-layers::before {
+    content: "Swapping layers";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--nice-black);
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.swapping-layers::after {
+    content: "Swapping layers";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--nice-black);
+    background-color: white;
+    transition: all 0.5s;
+    transform: translate(-100%, 100%);
+}
+
+.swapping-layers:hover::before{
+    transform: translate(100%,-100%);
+}
+
+.swapping-layers:hover::after{
+    transform: translate(0%,0%);
+}
